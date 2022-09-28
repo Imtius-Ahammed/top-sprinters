@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import Sprinters from '../Sprinters/Sprinters';
 import './Players.css'
@@ -13,10 +12,16 @@ const Players = () => {
   
   return (
     <div className='info-container'>
+      
       <div className="players-container">
-        {
+        
+      
+       
+       {
+          
           sprinters.map(sprinter=><Sprinters key={sprinter.id} sprinter={sprinter}></Sprinters>)
         }
+       
 
       </div>
       <div className="cart-container">
