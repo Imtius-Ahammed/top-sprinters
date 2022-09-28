@@ -13,7 +13,7 @@ const Sprinters = (props) => {
       <p>Time: {time}s</p>
 
       </div>
-      <button className='btn-cart'>Add to Cart</button>
+      <button onClick={()=>props.handleAddToCart(props.sprinter)} className='btn-cart' >Add to Cart</button>
 
       
     </div>
