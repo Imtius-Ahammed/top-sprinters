@@ -1,7 +1,14 @@
-import React, { useEffect, useState } from 'react';
+
+import { useEffect, useState } from 'react';
 import './Players.css'
 
 const Players = () => {
+  const[sprinters, setSprinters]=useState([])
+  useEffect(()=>{
+    fetch('products.json')
+    .then(res=>res.json())
+    .then(data=>setSprinters(data))
+  },[])
   
   return (
     <div className='info-container'>
