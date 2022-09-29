@@ -1,13 +1,16 @@
 .info-container{
   display: grid;
   grid-template-columns: 4fr 1fr;
+  background-color: rgb(199, 205, 210);
 }
 .players-container{
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 40px;
-  margin:100px 50px;
+ 
+  padding: 40px;
+  background-color: rgb(245, 241, 235);
  
 }
 .cart-container{
@@ -58,5 +61,11 @@
   color: rgb(2, 126, 221);
 }
 .logo-header img{
-  width: 70px;
+  width: 80px;
+  border-radius: 50%;
+ 
+}
+.questions{
+  margin-left: 40px;
+  padding-top: 10px;
 }

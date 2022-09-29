@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Cart.css'
 import logo from '../../../src/runner.jpg'
 import Toast from '../Toast/Toast';
+
 
 
 const Cart = ({cart}) => {
@@ -15,8 +16,17 @@ const Cart = ({cart}) => {
    total = parseFloat((total + sprinter.time * sprinter.quantity).toFixed(2));
    
   }
-  const[record,setRecord]=useState('')
+  const[record,setRecord]=useState('');
+  useEffect(()=>{
+    localStorage.setItem('items', JSON.stringify(record));
+    
+    setRecord(record);
+    
+  },[record])
 
+  
+  
+  
 
 
   return (
@@ -50,10 +60,11 @@ const Cart = ({cart}) => {
 
       </div>
       <div className='break-btn'>
-       <input type="button" value="20s" onClick={e=> setRecord(e.target.value)}/>
+       <input  type="button" value="20s" onClick={e=> setRecord(e.target.value)}/>
        <input type="button" value="39.12s" onClick={e=> setRecord(e.target.value)} />
        <input type="button" value="40.13s" onClick={e=> setRecord(e.target.value)} />
        <input type="button" value="38.49s"onClick={e=> setRecord(e.target.value)} />
+       
 
       </div>
 
