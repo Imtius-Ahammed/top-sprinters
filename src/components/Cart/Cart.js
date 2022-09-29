@@ -45,6 +45,13 @@ const Cart = ({cart}) => {
         </div>
 
       </div>
+      <div className='break-btn'>
+       <input type="button" value="20" />
+       <input type="button" value="39.12" />
+       <input type="button" value="40.13" />
+       <input type="button" value="38.49" />
+
+      </div>
 
 
 
