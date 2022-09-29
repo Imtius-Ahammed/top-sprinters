@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Cart.css'
 import logo from '../../../src/runner.jpg'
 import Toast from '../Toast/Toast';
@@ -15,6 +15,9 @@ const Cart = ({cart}) => {
    total = parseFloat((total + sprinter.time * sprinter.quantity).toFixed(2));
    
   }
+  const[record,setRecord]=useState('')
+
+
   return (
     <div className='cart'>
       <div className='profile'>
@@ -46,10 +49,10 @@ const Cart = ({cart}) => {
 
       </div>
       <div className='break-btn'>
-       <input type="button" value="20" />
-       <input type="button" value="39.12" />
-       <input type="button" value="40.13" />
-       <input type="button" value="38.49" />
+       <input type="button" value="20s" onClick={e=> setRecord(e.target.value)}/>
+       <input type="button" value="39.12s" onClick={e=> setRecord(e.target.value)} />
+       <input type="button" value="40.13s" onClick={e=> setRecord(e.target.value)} />
+       <input type="button" value="38.49s"onClick={e=> setRecord(e.target.value)} />
 
       </div>
 
@@ -68,7 +71,7 @@ const Cart = ({cart}) => {
 
       <div>
         <div className='total-time'>
-          <p>Records:  </p>
+          <p>Records: {record} </p>
         </div>
       </div>
 
