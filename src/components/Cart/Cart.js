@@ -4,7 +4,12 @@ import logo from '../../../src/runner.jpg'
 
 
 const Cart = ({cart}) => {
-  console.log(cart)
+  console.log(cart);
+  let total = 0;
+  for(const sprinter of cart ){
+   total = parseFloat((total + sprinter.time).toFixed(2));
+   
+  }
   return (
     <div className='cart'>
       <div className='profile'>
@@ -38,7 +43,18 @@ const Cart = ({cart}) => {
 
       <div>
         <h5>Scores time Details</h5>
-        
+
+        <div className='total-time'>
+          <h3>Total Time: {total} <small>sec</small> </h3>
+        </div>
+
+      </div>
+
+
+      <div>
+        <div className='total-time'>
+          <h3>Records:  </h3>
+        </div>
       </div>
 
 

@@ -12,7 +12,7 @@ const Players = () => {
     .then(data=>setSprinters(data))
   },[])
   const handleAddToCart=(sprinter)=>{
-    console.log(sprinter);
+    // console.log(sprinter);
     const newCart = [...cart,sprinter];
     setCart(newCart);
   }
