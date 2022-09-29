@@ -1,6 +1,7 @@
 import React from 'react';
 import './Cart.css'
 import logo from '../../../src/runner.jpg'
+import Toast from '../Toast/Toast';
 
 
 const Cart = ({cart}) => {
@@ -66,8 +67,7 @@ const Cart = ({cart}) => {
 
 
 
-
-       <h1>Welcome to Scores</h1>
+     <Toast></Toast>
        
       
     </div>
