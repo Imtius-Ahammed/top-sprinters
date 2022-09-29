@@ -18,6 +18,7 @@ const Cart = ({cart}) => {
   const[record,setRecord]=useState('')
 
 
+
   return (
     <div className='cart'>
       <div className='profile'>

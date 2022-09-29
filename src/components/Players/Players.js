@@ -1,3 +1,4 @@
+import logo from '../../../src/run.jpg'
 import { useEffect, useState } from 'react';
 import { addToDb, getStoredCart } from '../../utilities/fakedb';
 import Cart from '../Cart/Cart';
@@ -54,8 +55,9 @@ const Players = () => {
      
       
       <div>
-        <div>
-        <h1>Spri</h1>
+        <div className='logo-header'>
+          <img src={logo} alt=''></img>
+        <h1>TOP SPRINTERS</h1>
         
         </div>
       
