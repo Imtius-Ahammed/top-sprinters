@@ -21,10 +21,10 @@ const Cart = ({cart}) => {
           <img src={logo} alt=""></img>
 
         </div>
-        <div>
+        <div className='profile-text'>
           <h5>Md.Imtius Ahammed</h5>
-          <p>Athletics Writer</p>
-          <p>Selected items: {quantity}</p>
+          <p><small>Uttara,Dhaka</small></p>
+         
          
         </div>
       </div>
@@ -49,9 +49,10 @@ const Cart = ({cart}) => {
 
       <div>
         <h5>Scores time Details</h5>
+        <p>Selected items: {quantity}</p>
 
         <div className='total-time'>
-          <h3>Total Time: {total} <small>sec</small> </h3>
+          <p>Total Time:  {total} <small>seconds</small> </p>
         </div>
 
       </div>
@@ -59,7 +60,7 @@ const Cart = ({cart}) => {
 
       <div>
         <div className='total-time'>
-          <h3>Records:  </h3>
+          <p>Records:  </p>
         </div>
       </div>
 

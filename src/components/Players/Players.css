@@ -3,23 +3,51 @@
   grid-template-columns: 4fr 1fr;
 }
 .players-container{
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 40px;
-  margin: 100px 50px;
+  margin:100px 50px;
  
 }
 .cart-container{
   background-color: bisque;
   
 }
-@media screen and (max-width:1100px) {
-  .players-container{
-    grid-template-columns: repeat(2,1fr);
-  }
+@media screen and (min-width:577px) and (max-width:1100px){
   .info-container{
-    display: grid;
+    
     grid-template-columns: 3fr 2fr;
+    
+    
   }
+
+  .players-container{
+    
+    grid-template-columns:repeat(1,1fr);
+    
+  }
+
+  
+}
+
+@media screen and (max-width:576px){
+  .info-container{
+   
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 4fr;
+   
+  }
+
+  .players-container{
+    margin: 0;
+    padding: 0;
+   
+    grid-template-columns: repeat(1,1fr);
+    justify-items:center
+  }
+ 
+
   
 }

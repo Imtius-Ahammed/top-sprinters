@@ -3,7 +3,7 @@
   top: 0;
 }
 .cart-logo img{
-  width: 70px;
+  width: 60px;
   border-radius: 50%;
   
 }
@@ -13,6 +13,13 @@
   align-items: center;
   gap: 10px;
 }
+.profile-text h5{
+  margin-bottom: 0;
+  
+}
+.profile-text p{
+  margin-top: 2px;;
+}
 .maserment{
  
  display: grid;
@@ -21,6 +28,18 @@
  background-color: white;
  margin: 10px;
  border-radius: 8px;
+}
+@media screen and (max-width:576px) {
+  .maserment{
+ 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   
+    background-color: white;
+    margin: 10px;
+    border-radius: 8px;
+   }
+  
 }
 .info{
   display: flex;
