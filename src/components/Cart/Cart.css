@@ -1,0 +1,36 @@
+.cart{
+  position: sticky;
+  top: 0;
+}
+.cart-logo img{
+  width: 70px;
+  border-radius: 50%;
+  
+}
+.profile{
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  gap: 10px;
+}
+.maserment{
+ 
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+
+ background-color: white;
+ margin: 10px;
+ border-radius: 8px;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.info p{
+  margin-top: 0;
+}
+.info h5{
+  margin-bottom: 2px;
+}

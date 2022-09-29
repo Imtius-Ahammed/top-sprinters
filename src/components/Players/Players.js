@@ -24,8 +24,11 @@ const Players = () => {
      
       
       <div>
+        <div>
+        <h1>Spri</h1>
         
-      <h1>Spri</h1>
+        </div>
+      
        <div className="players-container">
        {
           
@@ -35,7 +38,7 @@ const Players = () => {
 
       </div>
       <div className="cart-container">
-       <Cart></Cart>
+       <Cart cart={cart}></Cart>
 
       </div>
       
