@@ -5,9 +5,13 @@ import logo from '../../../src/runner.jpg'
 
 const Cart = ({cart}) => {
   console.log(cart);
+ 
   let total = 0;
+  let quantity = 0;
   for(const sprinter of cart ){
-   total = parseFloat((total + sprinter.time).toFixed(2));
+    
+    quantity = quantity + sprinter.quantity;
+   total = parseFloat((total + sprinter.time * sprinter.quantity).toFixed(2));
    
   }
   return (
@@ -20,6 +24,8 @@ const Cart = ({cart}) => {
         <div>
           <h5>Md.Imtius Ahammed</h5>
           <p>Athletics Writer</p>
+          <p>Selected items: {quantity}</p>
+         
         </div>
       </div>
 
@@ -61,7 +67,7 @@ const Cart = ({cart}) => {
 
 
        <h1>Welcome to Scores</h1>
-        <p>Selected items: {cart.length}</p>
+       
       
     </div>
   );
